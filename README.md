@@ -1,2 +1,4 @@
 # tictactoe
-A PvP TicTacToe game designed by myself in Python
+This project presented me with some minor challenges in the form of different bugs that would occur and required patience to read each line step-by-step to spot and correct them.
+At first, one problem that I didn't consider was a scenario in which the user inputted an invalid input once the game was finished to the question: "Play again? (y/n): "
+This situation was easily fixed, since all that was required was the implementation of a while true loop with the question above that prompts a user input initially. We would forcibly break using the break command if any of the two valid inputs "y" or "n" was inputted but would display a message saying "Invalid input. Please enter 'y' or 'n'." for anything else being inputted which would infinitely continue the loop until a valid response was inputted. 
