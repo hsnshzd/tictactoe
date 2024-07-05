@@ -1,4 +1,8 @@
 # tictactoe
-This project presented me with some minor challenges in the form of different bugs that would occur and required patience to read each line step-by-step to spot and correct them.
-At first, one problem that I didn't consider was a scenario in which the user inputted an invalid input once the game was finished to the question: "Play again? (y/n): "
-This situation was easily fixed, since all that was required was the implementation of a while true loop with the question above that prompts a user input initially. We would forcibly break using the break command if any of the two valid inputs "y" or "n" was inputted but would display a message saying "Invalid input. Please enter 'y' or 'n'." for anything else being inputted which would infinitely continue the loop until a valid response was inputted. 
+During the development of the PvP project, I encountered initial challenges primarily related to debugging various bugs. Addressing these issues required meticulous line-by-line examination to identify and rectify them.
+
+One notable issue arose when handling user input following the completion of the game, specifically in response to the prompt: "Play again? (y/n):". Initially, I overlooked scenarios where users might input invalid responses. To resolve this, I implemented a while True loop that continuously prompts the user for input. The loop breaks only when the user inputs either "y" or "n". For any other input, the program displays a message instructing the user to enter either 'y' or 'n', ensuring the loop persists until a valid response is provided.
+
+In developing the AI bot, I experimented with different board formatting approaches, which initially caused display issues. To overcome this challenge, I referred back to the board formatting logic used in the PvP project, allowing for a swift resolution of the formatting discrepancies.
+
+The most demanding aspect of the project was integrating the minimax algorithm with alpha-beta pruning into the AI. This required research involving resources such as YouTube videos, sample projects, and AI. Despite being time-intensive, this effort significantly enhanced the project's efficiency. Implementing this complex feature enriched my knowledge of alpha-beta pruning in a minimax algorithm.
